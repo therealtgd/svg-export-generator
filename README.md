@@ -32,6 +32,24 @@ Replace `/path/to/svg/folder` with the path to your SVG folder and `/path/to/js/
 
 The script will generate an `index.js` file in your SVG folder with export statements for all your SVG icons.
 
+## New Function: refactor_imports
+The `refactor_imports` function was added to the script. This function allows you to refactor your import statements in JavaScript or TypeScript files to use a single import statement for all SVG files.
+
+Here's how the `refactor_imports` function works:
+
+1. It traverses the target folder recursively to find JavaScript or TypeScript files.
+2. For each file, it reads the content and searches for import statements that import SVG files.
+3. If import statements are found, it refactors them to use a single import statement for all SVG files.
+4. The refactored import statement is inserted before the first import statement in the file.
+5. The modified content is then written back to the file.
+6. The `refactor_imports` function improves code readability by consolidating multiple import statements for SVG files into a single import statement.
+
+To use the `refactor_imports` function run the script with a third argument which is the folder from where to import the svg files.
+Example:
+```bash
+python script.py /path/to/svg/folder /path/to/js/ts/folder /icons
+```
+
 ## Contributing
 
 If you'd like to contribute to this project, feel free to submit a pull request or open an issue for discussion.
