@@ -16,17 +16,17 @@ This script generates an `index.js` file in your SVG folder containing export st
 
 ## Installation
 
-1. Clone this repository or download the `script.py` file.
+1. Clone this repository or download the `svg_export_generator.py` file.
 2. Ensure you have Python 3.9 or newer installed on your system.
 
 ## Usage
 
 1. Open a terminal or command prompt.
-2. Navigate to the folder containing the `script.py` file.
+2. Navigate to the folder containing the `svg_export_generator.py` file.
 3. Run the following command:
 
 ```bash
-python script.py /path/to/svg/folder /path/to/js/ts/folder
+python svg_export_generator.py /path/to/svg/folder /path/to/js/ts/folder
 ```
 Replace `/path/to/svg/folder` with the path to your SVG folder and `/path/to/js/ts/folder` with the path to your JavaScript or TypeScript folder.
 
@@ -47,7 +47,7 @@ Here's how the `refactor_imports` function works:
 To use the `refactor_imports` function run the script with a third argument which is the folder from where to import the svg files.
 Example:
 ```bash
-python script.py /path/to/svg/folder /path/to/js/ts/folder /icons
+python svg_export_generator.py /path/to/svg/folder /path/to/js/ts/folder /icons
 ```
 
 ## Contributing
